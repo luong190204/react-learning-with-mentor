@@ -19,7 +19,7 @@ export default function Quote() {
     const interval = setInterval(() => {
       const randomIndex = Math.floor(Math.random() * quotes.length);
       setCurrentQuote(quotes[randomIndex]);
-    }, 1000);
+    }, 5000);
 
     return () => clearInterval(interval); // interval nằm cùng scope, không bị lệch
   }, [isRunning]);
