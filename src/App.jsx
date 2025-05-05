@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
-import ClickCounter from './components/Click';
-import Timer from './components/Timer';
-import Hello from './components/Hello';
-import Quote from './components/Quote';
-import MoodTracker from './components/MoodTracker';
+import React, { useState } from "react";
+import TodoList from "./components/TodoList";
 
 function App() {
+  return (
+    <div>
+      <TodoList />
+    </div>
+  );
+}
 
-  return <MoodTracker/>
-
-} 
-
-export default App
+export default App;
